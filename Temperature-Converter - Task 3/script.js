@@ -1,24 +1,16 @@
 function convertTemperature() {
-    // Get user input
     var temperatureInput = parseFloat(document.getElementById("temperatureInput").value);
-    
-    // Check if input is a valid number
     if (isNaN(temperatureInput)) {
         alert("Please enter a valid number for temperature.");
         return;
     }
-
-    // Get selected input and output units
     var inputUnitSelector = document.getElementById("inputUnit");
     var inputUnit = inputUnitSelector.options[inputUnitSelector.selectedIndex].value;
 
     var outputUnitSelector = document.getElementById("outputUnit");
     var outputUnit = outputUnitSelector.options[outputUnitSelector.selectedIndex].value;
 
-    // Perform conversion
     var result = convertToOutputUnit(temperatureInput, inputUnit, outputUnit);
-
-    // Display result
     document.getElementById("result").innerText = "Converted Temperature: " + result.toFixed(2) + "°" + outputUnit;
 }
 
