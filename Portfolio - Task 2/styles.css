@@ -12,6 +12,7 @@
 :root{
   --bg-main: white;
   --bg-second: #e7e7e7; 
+  --bg-drop: #e7e7e7;
   --bg-nav: #1f1f1f;
   --bg-text: black;
   --bg-heading: #343d68;
@@ -35,6 +36,7 @@ body{
   --bg-text:#DCDCDC;
   --bg-heading: #DCDCDC;
   --bg-animation:#87CEFA;
+  --bg-drop: #87CEFA;
   --bg-button: #5FC3E4;
   --bg-card: #87CEFA;
   --bg-footer: #778899;
@@ -827,6 +829,7 @@ footer {
     display: block;
     font-size: 7vw;
     color: var(--bg-drop);
+    cursor: pointer;
   }
   .heroSection{
     flex-direction: column-reverse;
